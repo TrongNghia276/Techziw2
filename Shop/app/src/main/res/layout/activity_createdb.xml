@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createdb">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="20dp"
+        android:text="If you run for the first time. Click here to execute the query DataBase"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/go"
+        android:layout_width="200dp"
+        app:layout_constraintVertical_bias=".7"
+        android:layout_height="wrap_content"
+        android:background="@color/pri_blue"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="If you have already executed the data. Click here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

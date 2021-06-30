@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bill">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/O_700"
+        android:id="@+id/topbarbill"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="60dp"
+        >
+        <TextView
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:id="@+id/backtocart"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:fontFamily="@font/poppins_semibold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="proceed with payment"
+            android:gravity="center"
+
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/topbarbill"
+        android:text="Full Name"
+        android:gravity="center"
+
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:id="@+id/fullnamebill"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fullnamebill"
+        android:text="Date of purchase : 1-1-2021"
+        android:lines="2"
+        android:id="@+id/date1"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:padding="10dp"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/heading1"
+        app:layout_constraintTop_toBottomOf="@+id/date1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:lines="1"
+            android:background="@drawable/editvuong"
+            android:padding="10dp"
+            android:text="ProductName"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/fullnamebill"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:lines="1"
+            android:background="@drawable/editvuong"
+            android:padding="10dp"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/fullnamebill"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:lines="1"
+            android:background="@drawable/editvuong"
+            android:padding="10dp"
+            android:text="Price"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/fullnamebill"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray_100"
+        android:id="@+id/trumcuoi"
+        app:layout_constraintTop_toBottomOf="@+id/heading1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recbill"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/trumcuoi"
+        >
+        <LinearLayout
+            android:layout_width="200dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: 998290173917"
+                android:fontFamily="@font/poppins"
+                android:id="@+id/phonebill"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line1: abc"
+                android:lines="1"
+                android:maxLines="3"
+            android:id="@+id/linebill1"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Line2: abc"
+                android:id="@+id/linebill2"
+                android:lines="1"
+                android:maxLines="3"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment methods"
+                android:gravity="right"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="0dp"
+
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:text="Visa"
+                        android:checked="true"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/ok123"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/heading2"
+        app:layout_constraintBottom_toTopOf="@+id/btncheck">
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:lines="1"
+            android:background="@color/gray_500"
+            android:padding="10dp"
+            android:text="Total:"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/Total"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:lines="1"
+            android:id="@+id/quantitybill"
+            android:background="@color/gray_500"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/fullnamebill"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:lines="1"
+            android:id="@+id/pricebill"
+            android:background="@color/gray_500"
+            android:padding="10dp"
+            android:text="$0"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/fullnamebill"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Checkout"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:id="@+id/btncheck"
+        android:layout_margin="5dp"
+        app:layout_constraintWidth_percent=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

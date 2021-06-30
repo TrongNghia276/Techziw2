@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo"
+        android:id="@+id/imageshop"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Samsung galaxy note"
+        android:gravity="center"
+        android:maxLines="3"
+        android:textSize="13dp"
+        android:lines="1"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:id="@+id/textshop"
+        app:layout_constraintTop_toBottomOf="@id/imageshop"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:text="$324"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/O_700"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:id="@+id/price"
+        app:layout_constraintTop_toBottomOf="@id/textshop"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

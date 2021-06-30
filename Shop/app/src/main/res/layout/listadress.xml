@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/O_700"
+        android:id="@+id/topbarbilla"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="20dp"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="40dp"
+            android:id="@+id/backtomaina"
+            android:layout_height="40dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="All Address"
+            android:textSize="20dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/createadd"
+        app:layout_constraintTop_toBottomOf="@id/topbarbilla"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listaddressc"
+                    android:orientation="vertical"/>
+
+            </RadioGroup>
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:id="@+id/createadd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintWidth_percent=".6"
+        android:background="@drawable/btn_login"
+        android:text="Create Address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

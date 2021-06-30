@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/slide_1"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/logo"
+                android:id="@+id/imageproduct"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Samsung Galaxy"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/textproductname"
+                android:textColor="@color/black"
+                android:padding="5dp"
+
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:padding="5dp"
+
+                android:maxHeight="270dp"
+                android:id="@+id/descrip"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/gray_700"
+                android:text="The 108Mp voyager | 120HZ AmoLED"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Priceproduct"
+                    android:layout_height="wrap_content"
+                    android:text="From 249$"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/O_700"
+                    android:fontFamily="@font/poppins"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Cart"
+                    android:textAlignment="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:id="@+id/addcart"
+
+                    android:textColor="@color/O_700"
+                    android:background="@drawable/edit_text_bg"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.core.widget.NestedScrollView>

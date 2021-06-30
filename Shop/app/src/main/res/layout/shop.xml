@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/topw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/O_200"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/O_200"
+        app:layout_constraintTop_toBottomOf="@id/topw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scv"
+        >
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layc"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/O_200"
+        android:padding="10dp"
+
+        app:layout_constraintWidth_percent="0.65"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/topw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textshirts"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="NotSibling">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/searbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/searbar"
+        android:padding="10dp"
+
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toBottomOf="@id/topw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textshirts"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="NotSibling"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            app:layout_constraintVertical_bias="0"
+            android:text="Sort Price"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/sort1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_baseline_arrow_circle_down_24"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toEndOf="@+id/sort2"
+            />
+         <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+             android:layout_marginTop="20dp"
+             android:id="@+id/sort2"
+             android:background="@drawable/ic_baseline_arrow_circle_up_24"
+             app:layout_constraintEnd_toStartOf="@+id/sort1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layc"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textshirts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Shirt"
+                android:textColor="@color/black"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Shirtshop"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="horizontal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textphones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Phone"
+                android:textColor="@color/black"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Phoneshop"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="horizontal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textshoess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Shoes"
+                android:textColor="@color/black"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ShoesShop"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="horizontal" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+
+        android:layout_height="20dp"
+        android:background="@color/O_200"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+
+        android:layout_height="3dp"
+        android:background="@color/gray_700"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

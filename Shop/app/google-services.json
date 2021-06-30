@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "952209857543",
+    "project_id": "shopper-e3a25",
+    "storage_bucket": "shopper-e3a25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952209857543:android:426ec7d41c9918ddb49ea2",
+        "android_client_info": {
+          "package_name": "com.enoch.shoppersparadise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952209857543-qov1o61ddi4t8ti8tbfsj5h8mk1e4h8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.enoch.shoppersparadise",
+            "certificate_hash": "ebec05debdce53611c2dfb0c0582594c55191e99"
+          }
+        },
+        {
+          "client_id": "952209857543-rpcteo4f0rbkou80e1rka2of7tg3e5eq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr7p4K4vTp9MEjUSP0px-6zi2jaGWTgEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952209857543-rpcteo4f0rbkou80e1rka2of7tg3e5eq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
